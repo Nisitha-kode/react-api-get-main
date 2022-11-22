@@ -1,18 +1,17 @@
 import { useContext } from "react"
 // Import it from where ever you have stored it
-import MyContext from "context/MyContext";
+//import MyContext from "context/MyContext";
 
-function Example() {
-    const context = useContext(MyContext)
+function MyContext() {
+    const Mycontext = createContext("default value")
     return (
         <div>
           <p>
             {/* Access it here as any other variable */}
-            {context}
+            {MyContext}
           </p>
         </div>
     );
 }
 
-
-export default MyContext;
+export  default MyContext
