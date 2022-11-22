@@ -7,7 +7,7 @@ import {Index} from "./components/";
 import {About} from  "./components/about";
 
 function AppRouter () {
-  const[]
+  
   return (
     <Router>
       <div>
