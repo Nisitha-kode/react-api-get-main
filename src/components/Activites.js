@@ -1,6 +1,18 @@
 import { useEffect, useState } from "react";
 
 function Activities() {
+    // React hooks up here
+    const [activities, setActivities] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    useEffect(() => {
+        loadActivity();
+    }, []);
+
+    if (activities.length === 0) {
+        return <p>Loading...</p>;
+    }
+
+    //Custom Js
     function loadActivity() {
         setIsLoading(true);
         fetch("https://www.boredapi.com/api/activity")
@@ -11,15 +23,8 @@ function Activities() {
             });
     }
 
-    const [activities, setActivities] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
-    useEffect(() => {
-        loadActivity();
-    }, []);
-
-    if (activities.length === 0) {
-        return <p>Loading...</p>;
-    }
+ 
+  
 
     return (
         <div>
