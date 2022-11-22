@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function Activities() {
-    // React hooks up here
+    // React hooks 
     const [activities, setActivities] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
@@ -22,8 +22,6 @@ function Activities() {
                 setIsLoading(false);
             });
     }
-
- 
   
 
     return (
