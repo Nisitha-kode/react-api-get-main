@@ -3,9 +3,9 @@ import { useContext } from "react"
 import MyContext from "../context/MyContext";
 function Login(){
     //const [activities, setActivities] = useContext([Activities,setActivities]);
-    const context = useContext(MyContext)
+    const { activities } = useContext(MyContext)
     return (
-      <h1>{MyContext}</h1>
+      <h1>{activities}</h1>
     )
   }
 export default Login;
