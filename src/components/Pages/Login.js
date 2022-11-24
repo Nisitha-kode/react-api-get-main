@@ -1,4 +1,4 @@
-import React ,{useContext} from "React";
+import { useContext } from "react"
 //import Activities from "../Activites";
 import MyContext from "../context/MyContext";
 function Login(){

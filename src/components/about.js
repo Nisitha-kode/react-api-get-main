@@ -1,10 +1,12 @@
-import React ,{useContext} from "React";
+import { useContext } from "react"
 //import Activities from "../Activites";
 import MyContext from "./context/MyContext";
 function About(){
     //const [activities, setActivities] = useContext([Activities,setActivities]);
+    const context = useContext(MyContext)
     return(
         <div>
+             <h1>{MyContext}</h1>
             style={{
                 color:"green",
                 borderWidth:1,

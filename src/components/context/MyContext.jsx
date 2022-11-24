@@ -3,7 +3,7 @@ import { useContext } from "react"
 //import MyContext from "context/MyContext";
 
 function MyContext() {
-    const Mycontext = createContext("default value")
+    const MyContext = createContext("default value")
     return (
         <div>
           <p>
